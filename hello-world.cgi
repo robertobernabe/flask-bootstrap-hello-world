@@ -3,6 +3,7 @@ try:
     import sys
     import os
     import site
+    import traceback
 
     if site.getusersitepackages() not in sys.path:
         sys.path.append(site.getusersitepackages())
@@ -25,3 +26,5 @@ try:
 except:
     print "Content-type: text/plain\n\n"
     print "Unexpected error:", sys.exc_info()[0]
+    print traceback.format_tb()
+
