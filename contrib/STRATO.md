@@ -24,3 +24,6 @@ if site.getusersitepackages() not in sys.path:
 To execute 'django-admin' use this command: `~/.local/bin/django-admin`.
 
 To start a new project use `~/.local/bin/django-admin startproject <project name>`.
+
+
+/home/strato/www/fs/www.fschaeffeler.de/htdocs/
