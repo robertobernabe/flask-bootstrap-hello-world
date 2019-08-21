@@ -1,3 +1,4 @@
+DirectoryIndex index.cgi
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f # Don't interfere with static files
 RewriteRule ^(.*)$ ./index.cgi/$1 [L]
