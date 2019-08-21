@@ -19,6 +19,6 @@ try:
 
     CGIHandler().run(app)
 
-except Exception as e:
+except:
     print "Content-type: text/plain\n\n"
-    print e.message
+    print "Unexpected error:", sys.exc_info()[0]
