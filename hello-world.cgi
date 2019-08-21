@@ -1,10 +1,13 @@
 #!/usr/bin/python
 try:
     import sys
+    import os
     import site
 
     if site.getusersitepackages() not in sys.path:
         sys.path.append(site.getusersitepackages())
+    homeDir = os.path.expanduser("~")
+    sys.path.append(homeDir + "/flask-bootstrap-hello-world")
 
     from wsgiref.handlers import CGIHandler
     from hello_world import app
